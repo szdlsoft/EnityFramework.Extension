@@ -1,27 +1,17 @@
-# EntityFramework.BulkInsert
-Updated port of EntityFramework.BulkInsert from the original version on the Codeplex site. This is not my original project, this is to keep it going and add minor updates.  The original is hosted on Codeplex.
+# EntityFramework.BulkInsert and ExpressionExtensions
+在原来https://github.com/Thorium/EntityFramework.BulkInsert.git 的基础上， 批量插入时，增加了引用； 增加了ExpressionExtensions
 
 # Purpose
-The purpose of this library is for performing Bulk Inserts using EntityFramework 6 and your existing `DbContext` instance to perform faster inserts instead of generating multiple insert statements for a collection of strongly typed objects.
-
+1. 批量插入时，增加了引用
+2. 增加了ExpressionExtensions   
 # Usage
 
 ```cs
-IEnumerable<Car> cars = GenerateCars();
-
-using (var context = GetDbContext())
-{
-    context.BulkInsert<Car>(cars);
-}
-```
-
-async IO support is also built in:
-
-```cs
-IEnumerable<Car> cars = GenerateCars();
-
-using (var context = GetDbContext())
-{
-    await context.BulkInsertAsync<Car>(cars);
-}
+	Expression<Func<SysUser, bool>> exp1 = s => s.UserName.Contains("1") && s.Age > 0;
+		Expression<Func<SysUser, bool>> exp2 =exp1.And( s => s.IsEnable == 1);
+		using (var context = new DbContext().ConnectionString(connString))
+		{
+			var result1 = context.Select<SysUser>(exp1).QueryMany();
+			var result2 = context.Select<SysUser>(exp2).QueryMany();
+		}
 ```
