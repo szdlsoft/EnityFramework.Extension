@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Duolin.shen</authors>
+    <owners>Duolin.shen</owners>
+    <licenseUrl>http://www.g.com</licenseUrl>
+    <projectUrl>http://www.g.com</projectUrl>
+    <iconUrl>http://www.g.com</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>动态拼接lamda表达式</description>
+    <releaseNotes>首次发行.</releaseNotes>
+    <copyright>Copyright 2018-2099</copyright>
+    <tags>Expression Linq Lamda</tags>
+  </metadata>
+</package>

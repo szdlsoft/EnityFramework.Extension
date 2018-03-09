@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>EFBulkInsert</id>
+    <version>$version$</version>
+    <authors>DuoLin.Shen</authors>
+    <owners>DuoLin.Shen</owners>
+    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>EntityFramework.BulkInsert 实现ReferenceId AutoSet.</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>BulkInser AutoSet</tags>
+    <dependencies>
+      <dependency id="SampleDependency" version="1.0" />
+    </dependencies>
+  </metadata>
+</package>
