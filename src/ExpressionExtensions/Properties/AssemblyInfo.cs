@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("ExpressionExtensions")]
+[assembly: AssemblyTitle("ExpressionExtensions.Sdl")]
 [assembly: AssemblyDescription("扩展")]
 [assembly: AssemblyConfiguration("动态拼接lamda表达式")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ExpressionExtensions")]
+[assembly: AssemblyProduct("ExpressionExtensions.Sdl")]
 [assembly: AssemblyCopyright("Copyright ©  2018-2099")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

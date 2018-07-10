@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
+    <id>SdlExpressionExtensions.Sdl</id>
     <version>$version$</version>
-    <title>$title$</title>
+    <title>Fix bug Sdl</title>
     <authors>Duolin.shen</authors>
     <owners>Duolin.shen</owners>
     <licenseUrl>http://www.g.com</licenseUrl>

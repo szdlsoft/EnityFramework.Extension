@@ -4,7 +4,7 @@
 # Purpose
 1. 批量插入时，增加了引用
 2. 增加了ExpressionExtensions   
-# Usage
+# 批量插入时
 
 ```cs
 	Expression<Func<SysUser, bool>> exp1 = s => s.UserName.Contains("1") && s.Age > 0;
